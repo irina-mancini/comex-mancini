@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Glegoo:wght@700&family=Noto+Serif:ital@0;1&family=PT+Serif:ital@0;1&family=Roboto+Slab:wght@300;400&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+main h2 {
+    height: 200px;
+    background-color: #afc7d3;
+    font-size: 2rem;
+    text-align: center;  
+    justify-content: center;
+    padding-top: 70px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* HEADER ----------------- */
+
+.header{
+    background-color: lightgrey;
+    color: black;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.header__image{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    display: inline-block;
+    margin-left: 17px;  
+}
+
+.header__navegador{
+    background-color: lightgrey;
+    margin-right: 30px;
+    color: black;
+    height: 45px;
+}
+
+li{
+  list-style: none;
+  padding: 10px;  
+  float: left;
+}
+
+ul a{
+    text-decoration: none;
+    color: #000;
+    }
+.menu {
+    display: none;
+}
+/* FOOTER -------------------------- */
+.footer {
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0;
+      
+   } 
+  .footer__mail {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      
+  }
+  .footer--mail {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+  .footer__link {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+    .footer--link {
+      margin-right: 20px;      
+  }
+
+/* INICIO -------------------- */
+
+.hero{
+    height: 690px;
+    background-image:url("../assets/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1-index {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;   
+    }
+.h2-index {
+    color: #fff;
+    font-size: 2.3rem;
+    text-align: center;   
+}
+.hero-button {
+    margin-top: 15px;
+    background-color: lightgray;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* SOBRE MÍ ------------------- */
+
+.div__sobremi {
+    margin-right: 17px;
+}
+.div__parrafo {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.conectemos {
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.conectemos__linkedin {
+    margin-left: 5px;
+}
+
+/* SERVICIOS -------------------- */
+
+.mainServicios {
+    height: 100%
+    max-width: 100%;
+}
+.div__servicios {
+    max-width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 25px;
+    column-gap: 2rem;
+}
+.div.s {
+    height: 790px;
+    display: inline-block;
+}
+
+/* CAPACITACIONES ----------------- */
+
+.main__capacitaciones {
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CONTACTO ----------------- */
+
+.div__contacto {
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+/* MEDIA QUERIES --------------- */
+
+@media screen and (max-width: 480px) {
+   .header__ulnavegador {
+      display: none;
+   }
+   .menu {
+       display: block;
+       margin: 7px;
+   }
+
+    .hero{
+        height: 790px;
+        background-image:url("../assets/fondo.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .h1-index{
+        color: #fff;
+        font-size: 2rem;
+        text-align: center; 
+        display: flex;
+        flex-direction: column;  
+        }  
+
+/* INICIO */
+.h2-index { 
+display: none;
+}
+
+
+/* SERVICIOS -------------------- */
+
+.div__servicios {
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 25px;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+}
+.servicios--subtitulo {
+    margin-top: 20px;
+}
+/* .main-capac{
+    width: 80%;
+} */
+}
