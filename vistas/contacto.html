@@ -29,44 +29,37 @@
       
     </header>
     </header> 
-   <main>
+      <main>
         <h2>Contacto</h2>
         <div class="div__contacto">
-            <h3>Deje su mensaje</h3>
-            <form action="" method="get" enctype="text/plain">
+            <form class="formulario" action="" method="get" enctype="text/plain">
+                <h3 class="mensaje" >DEJE SU MENSAJE</h3>
                 <div>
                     <label for="userName">Nombre</label>
-                    <br>
-                    <input type="text" id="userName" name="userName" placeholder="Coloque su nombre">
+                    <input class="campo" type="text" id="userName" name="userName" placeholder="Coloque su nombre">
                 </div>
-                <br>
                 <div>
                     <label for="userMail">Correo</label>
                     <br>
-                    <input type="email" id="userMail" name="userMail" placeholder="Coloque su correo">
+                    <input class="campo" type="email" id="userMail" name="userMail" placeholder="Coloque su correo">
                 </div>
-                <br>
                 <div>
                     <label class="contacto__servicio" for="servicio">Servicio</label>
-                    <br>
-                    <select name="servicio" id="servicio" multiple>
+                    <select class="campo" name="servicio" id="servicio" multiple>
                        <option value="asesoramiento">Asesoramiento</option> 
                        <option value="investigacionDeMercado">Investigación de mercado</option>
                        <option value="despachanteDeAduana">Despachante de Aduana</option>
+                       <option value="otro">Otro</option>
                     </select>
                 </div>
-                <br>
                 <div>
                     <label for="userMensaje">Mensaje</label>
                     <br>
-                    <textarea name="userMensaje" id="userMensaje" cols="30" rows="10"></textarea>
+                    <textarea class="campo" name="userMensaje" id="userMensaje" cols="30" rows="10"></textarea>
+                </div class="div__button">
+                  <button class="button" type="enviar">ENVIAR</button>
                 </div>
-                <br>
-            </div>
-            <div class="button">
-                <button type="enviar">Enviar</button>
-                </form>
-            </div>
+            </form>
         </div>
    </main>
    <footer class="footer">
