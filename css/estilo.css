@@ -9,6 +9,16 @@
 .body {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+.body-index {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 100vh;
 }
 main {
     padding-top: 2.5rem;
@@ -82,10 +92,14 @@ background: rgb(225, 229, 229);
     display: flex;
     align-content: center;
     justify-content: center;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
    } 
+
 .footer__mail {
       width: 50%;
       display: flex;
@@ -104,14 +118,15 @@ background: rgb(225, 229, 229);
       flex-direction: row;
       justify-content: flex-end;
     }
-    .footer--link {
+.footer--link {
       margin-right: 20px;      
       }
 
 /* INICIO -------------------- */
 
+
 .hero{
-    height: 610px;
+    height: 630px;
     background-image:url("../assets/fondo.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -224,6 +239,7 @@ background: rgb(225, 229, 229);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -244,7 +260,6 @@ background: rgb(225, 229, 229);
     border-radius: 2px;
     }
 .div__contacto {
-    margin-left: 17px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,10 +289,11 @@ textarea {
 .button {
     width: 100%;
     padding-bottom: 20px;
-    background: lightgrey;
+    background: rgb(190, 189, 189);
     padding: 15px;
     border-radius: 1px;
     text-align: center;
+    border: none;
 }
 .button:hover {
     cursor: pointer;
@@ -291,7 +307,18 @@ textarea {
 .header-contacto {
         display: none;
     }
-        
+.header-inicio {
+        display: none;
+    }   
+.header-sobremi {
+        display: none;
+    }
+.header-servicios {
+        display: none;
+    }
+.header-capacitaciones {
+        display: none;
+    }
 .header{
     background-color: lightgrey;
     color: black;
@@ -312,7 +339,7 @@ textarea {
     padding: 0px;
 }
 .header__ulnavegador {
-    font-size: 15px;
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
 }
@@ -331,9 +358,18 @@ main h2 {
 
 /* INICIO ---------------------- */
 .h2-index { 
-display: none;
+    display: none;
+}
+.h1-index {
+    margin-bottom: 35px;
+}
+.hero-button {
+    font-size: 12px;
 }
 
+.hero{
+    height: 830px;
+}
 
 /* SERVICIOS -------------------- */
 
@@ -351,7 +387,7 @@ display: none;
 
 /* CONTACTO -------------------- */
  .formulario {
-     width: 100%;
+     width: 90%;
  }
 
 }
