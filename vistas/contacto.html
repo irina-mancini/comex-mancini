@@ -3,6 +3,7 @@
 
 <!-- HEAD CONTACTO -->
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +15,34 @@
 <body  class="body">
 
 <!-- HEADER CONTACTO -->
-    <header class="header">
-        <div class="header__image">
-            <a href="index.html"><img src="../assets/logo.png" alt="Irina Mancini"></a>
+<header class="header">
+    <nav class="navbar navbar-expand-lg header__navegador">
+        <div class="container-fluid">
+            <a href="../index.html"><img class="header__image" src="../assets/logo.png" alt="Irina Mancini"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center header__ulnavegador">
+              <li class="nav-item header-inicio">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre_mi.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="capacitaciones.html ">Capacitaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a> </li>
+            </ul>
+          </div>
         </div>
-        <nav class="header__navegador">
-           <ul class="header__ulnavegador">
-                <li><a href="../index.html">Inicio</a></li>
-               <li><a href="sobre_mi.html">Sobre mí</a></li>
-               <li><a href="servicios.html">Servicios</a></li>
-               <li><a href="capacitaciones.html">Capacitaciones</a></li>
-               <li class="header-contacto"><a href="contacto.html">Contacto</a></li>
-           </ul>
-       </nav>
-    </header> 
+      </nav>  
+</header> 
 
     <!-- MAIN CONTACTO -->
     <main>
@@ -73,7 +88,7 @@
         <a class="footer--link" href="https://www.linkedin.com/in/irina-mancini/"><i class="fa-brands fa-linkedin"></i></a>
     </div>
  </footer>
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 

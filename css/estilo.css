@@ -45,10 +45,7 @@ h3 {
     width: 100%;
     height: 45px;
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;  
+    
 }
 
 .header__image{
@@ -63,12 +60,14 @@ h3 {
     margin-right: 30px;
     color: black;
     height: 45px;
+    justify-content: center;
 }
 
 li{
   list-style: none;
   padding: 10px;  
   float: left;
+  justify-content: center;
 }
 
 ul a{
@@ -76,7 +75,8 @@ ul a{
     color: #000;
     transition: all 0.4s linear;
     border-radius: 4px;
-    padding: 0.5rem 0.2rem;
+    padding: 1rem;
+    justify-content: center;
 }
 ul a:hover {
 background: rgb(225, 229, 229);
@@ -85,6 +85,10 @@ background: rgb(225, 229, 229);
 .menu {
     display: none;
 }
+.navbar {
+padding: 0;
+}
+
 /* FOOTER -------------------------- */
 .footer {
     height: 50px;
@@ -124,10 +128,9 @@ background: rgb(225, 229, 229);
 
 /* INICIO -------------------- */
 
-
 .hero{
     height: 630px;
-    background-image:url("../assets/fondo.jpg");
+    background-image: url("../assets/fondo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,13 +138,23 @@ background: rgb(225, 229, 229);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
+/* .hero::before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+} */
 .h1-index {
     color: #fff;
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;   
     font-weight: 110%;
+    
 }
 .h2-index {
     color: #fff;
@@ -151,6 +164,7 @@ background: rgb(225, 229, 229);
     animation-name: aparecer;
     animation-iteration-count: 1;
     animation-duration: 2.5s;
+    
     
 }
 @keyframes aparecer {
@@ -165,10 +179,53 @@ background: rgb(225, 229, 229);
     border-radius: 4px;
     padding: 10px;
     border: none;
+    position: relative;
 }
 .hero-button:hover {
     cursor: pointer;
 }
+.h3__index {
+    background-image:linear-gradient(to bottom,  #547c92,  #daecf6 ) ;
+    font-size: 1.8rem;
+    text-align: center;  
+    justify-content: center;
+    padding-top: 18px;
+    height: 70px;
+    margin: 0;
+    }
+.div__parrafo {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.card__index {
+    height: 30vh;
+    justify-content: center;
+    cursor: default;
+    transition: height 0.5s;
+    /* transition: width 2s; */
+     }
+.card__index:hover {
+    height: 95%;
+    /* width: %; */
+    z-index: 1;
+} 
+
+.h3__index--margin {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card__a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 3px;
+    transition: all 400ms case;
+
+} 
 
 /* SOBRE MÍ ------------------- */
 
@@ -176,8 +233,11 @@ background: rgb(225, 229, 229);
     margin-right: 17px;
 }
 .div__parrafo {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 25px 25px 0px 25px 
+}
+
+.card {
+    margin-top: 30px;
 }
 .conectemos {
     height: 50px;
@@ -192,6 +252,7 @@ background: rgb(225, 229, 229);
 .conectemos__linkedin {
     margin-left: 5px;
 }
+
 
 /* SERVICIOS -------------------- */
 
@@ -233,15 +294,23 @@ background: rgb(225, 229, 229);
 /* CAPACITACIONES ----------------- */
 
 .main__capacitaciones {
-    
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-bottom: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    
 }
+.carousel-item { 
+    align-content: center;
+    justify-content: center;
+    
+}
+.video {
+    height: 300px;
+    }
 
 /* CONTACTO ----------------- */
 .mensaje {
@@ -304,21 +373,6 @@ textarea {
 
 @media screen and (max-width: 480px) {
    
-.header-contacto {
-        display: none;
-    }
-.header-inicio {
-        display: none;
-    }   
-.header-sobremi {
-        display: none;
-    }
-.header-servicios {
-        display: none;
-    }
-.header-capacitaciones {
-        display: none;
-    }
 .header{
     background-color: lightgrey;
     color: black;
@@ -326,7 +380,7 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
+    }
 .header__image{
     display: flex;
     justify-content: center;  
@@ -337,11 +391,15 @@ textarea {
     color: black;
     margin: 0px;
     padding: 0px;
+    justify-content: flex-end;
 }
 .header__ulnavegador {
     font-size: 16px;
     margin: 0px;
     padding: 0px;
+}
+ul a {
+    width: 100vw;
 }
 .h1-index{
     color: #fff;

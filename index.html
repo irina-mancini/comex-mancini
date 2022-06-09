@@ -1,44 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <!-- HEAD INICIO -->
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="./css/estilo.css">
     <script src="https://kit.fontawesome.com/076f4cd61c.js" crossorigin="anonymous"></script>
-    <title>Irina Mancini</title>
+    <title>Mancini</title>
 </head>
 
 <body class="body-index">
 
 <!-- HEADER INICIO -->
-    <header class="header">
-        <div class="header__image">
-            <a href="index.html"><img src="./assets/logo.png" alt="Irina Mancini"></a>
+<header class="header">
+    <nav class="navbar navbar-expand-lg header__navegador">
+        <div class="container-fluid">
+            <a href="index.html"><img class="header__image" src="./assets/logo.png" alt="Irina Mancini"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center header__ulnavegador">
+              <li class="nav-item header-inicio">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./vistas/sobre_mi.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./vistas/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./vistas/capacitaciones.html ">Capacitaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./vistas/contacto.html">Contacto</a> </li>
+            </ul>
+          </div>
         </div>
-        <div class="header__navegador">
-            <nav>
-               <ul class="header__ulnavegador">
-                   <li class="header-inicio" ><a href="index.html">Inicio</a></li>
-                   <li><a href="./vistas/sobre_mi.html">Sobre mí</a></li>
-                   <li><a href="./vistas/servicios.html">Servicios</a></li>
-                   <li><a href="./vistas/capacitaciones.html">Capacitaciones</a></li>
-                   <li><a href="./vistas/contacto.html">Contacto</a></li>
-               </ul>
-           </nav>
-        </div>  
-    </header>
-
+      </nav>  
+</header>
+    
 <!-- HERO INICIO -->
     <main>
         <div class="hero">
-            <h1 class="h1-index"> <strong> IRINA MANCINI </strong> </h1>
-                <p class="h2-index">Servicios de comercio internacional</p>
+            <h1 class="h1-index"> <strong> MANCINI </strong> </h1>
+                <p class="h2-index">Expertos en comercio internacional</p>
             <a href="./vistas/contacto.html">
             <button class="hero-button" > <Strong> CONTACTAR</Strong> </button></a>
         </div>
+
+        <!-- Servicios INICIO -->
+        <div class="div__ssindex">
+            <h3 class="h3__index" > Servicios</h3>
+            <div class="row">
+                <div class="col">
+                  <article class="card bg-light card__index">
+                        <p class="div__parrafo text-center">
+                        <strong>Asesoramiento en comercio internacional</strong></p>
+                        <a class="text-center card__a" href="./vistas/servicios.html">Leer más</a>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card bg-light card__index">
+                        <p class="div__parrafo text-center">
+                        <strong>Investigaciones de mercado</strong>
+                        </p>
+                        <a class="text-center card__a" href="./vistas/servicios.html">Leer más</a>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card bg-light card__index">
+                        <p class="div__parrafo text-center">
+                        <strong>Gestión operativa</strong></p>
+                        <a class="text-center card__a" href="./vistas/servicios.html">Leer más</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <article class="card bg-light card__index">
+                        <p class="div__parrafo text-center"><strong>Logística internacional</strong>  
+                        </p>
+                        <a class="text-center card__a" href="./vistas/servicios.html">Leer más</a>
+                    </article>
+                </div>
+                <div class="col ">
+                    <article class="card bg-light card__index">
+                        <p class="div__parrafo text-center">
+                        <strong>Capacitaciones in company</strong></p>
+                        <a class="text-center card__a" href="./vistas/servicios.html">Leer más</a>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card bg-light card__index">
+                        <p class="div__parrafo text-center">
+                        <strong>Desarrollo de contactos institucionales y potenciales clientes</strong> </p>
+                        <a class="text-center card__a" href="./vistas/servicios.html">Leer más</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Casos de éxito INICIO -->
+        <div class="div__casoexito">
+
+         <h3 class="h3__index h3__index--margin"> Casos de éxito </h3>
+       </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3">
+       <h4>Caso 1</h4>
+          </div>
+          <div class="col-9">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quasi nostrum. Quisquam, nostrum molestiae. Cum, quo dolorum provident quidem rerum itaque nihil consequuntur sunt dolores amet voluptatum doloremque, officiis beatae.
+          </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <h4>Caso 2</h4>
+              </div>
+              <div class="col-9">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quasi nostrum. Quisquam, nostrum molestiae. Cum, quo dolorum provident quidem rerum itaque nihil consequuntur sunt dolores amet voluptatum doloremque, officiis beatae.
+              </div>
+            </div>    
+        
     </main>
 
 <!-- FOOTER INICIO-->
@@ -50,7 +144,7 @@
             <a class="footer--link" href="https://www.linkedin.com/in/irina-mancini/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
      </footer>
-
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 

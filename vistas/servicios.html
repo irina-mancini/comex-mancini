@@ -3,6 +3,7 @@
 
 <!-- HEAD SERVICIOS -->
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +15,34 @@
 <body class="body">
 
 <!-- HEADER SERVICIOS -->
-    <header class="header">
-        <div class="header__image">
-            <a href="index.html"><img src="../assets/logo.png" alt="Irina Mancini"></a>
-        </div>  
-        <nav class="header__navegador">
-           <ul class="header__ulnavegador">
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="sobre_mi.html">Sobre mí</a></li>
-               <li class="header-servicios" ><a href="servicios.html">Servicios</a></li>
-               <li><a href="capacitaciones.html">Capacitaciones</a></li>
-               <li><a href="contacto.html">Contacto</a></li>
-           </ul>
-       </nav>  
-    </header>
- 
+<header class="header">
+    <nav class="navbar navbar-expand-lg header__navegador">
+        <div class="container-fluid">
+            <a href="../index.html"><img class="header__image" src="../assets/logo.png" alt="Irina Mancini"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center header__ulnavegador">
+              <li class="nav-item header-inicio">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre_mi.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="capacitaciones.html ">Capacitaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a> </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+</header>
  <!-- MAIN SERVICIOS  -->
     <main class="mainServicios">
             <h2 class="h2-servicios">Servicios</h2>
@@ -56,9 +70,38 @@
                 <div class="img__servicios">
                 <img src="../assets/aduana.png" alt="" width="42%">
                 </div>
-                <h3 class="servicios--subtitulo">Despachante de aduana</h3>
+                <h3 class="servicios--subtitulo">Gestión operativa</h3>
                 <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos eligendi ducimus asperiores reiciendis quibusdam temporibus maiores eos in! Necessitatibus rerum dicta dolore alias voluptatum rem nobis sapiente quam nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolorum ad est nisi distinctio sunt cumque ut labore, consequatur vero, itaque ullam qui aperiam officia iure necessitatibus? Distinctio, necessitatibus expedita!</p>
                 <br>
+            </div>
+            </div>
+            <div class="div__servicios">
+            <div class="div-s">
+                <div class= "img__servicios">
+                    <img src="../assets/asesoramiento.png" alt="asesoramiento comercio internacional" width="45%" >
+                </div>
+                <h3 class= "servicios--subtitulo">Logística internacional</h3>
+                <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos eligendi ducimus asperiores reiciendis quibusdam temporibus maiores eos in! Necessitatibus rerum dicta dolore alias voluptatum rem nobis sapiente quam nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim esse beatae vel quis doloribus facilis neque velit incidunt vero eligendi. Quis necessitatibus facilis ut incidunt dicta adipisci voluptas corrupti repudiandae?</p>
+                <br>
+            </div>
+
+            <div class="div-s">
+                <div class= "img__servicios">
+                <img src="../assets/investigaciones.png" alt="" width="40%" >
+                </div>
+                <h3 class= "servicios--subtitulo"> Capacitaciones</h3>
+                <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos eligendi ducimus asperiores reiciendis quibusdam temporibus maiores eos in! Necessitatibus rerum dicta dolore alias voluptatum rem nobis sapiente quam nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem laboriosam magni, esse architecto eveniet voluptas repudiandae provident, quas enim odit aut expedita exercitationem. Veniam voluptatum provident autem repellendus culpa quisquam!</p>
+                <br>
+            </div>
+
+            <div class="div-s">
+                <div class="img__servicios">
+                <img src="../assets/aduana.png" alt="" width="42%">
+                </div>
+                <h3 class="servicios--subtitulo">Desarrollo de contactos institucionales y potenciales clientes</h3>
+                <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos eligendi ducimus asperiores reiciendis quibusdam temporibus maiores eos in! Necessitatibus rerum dicta dolore alias voluptatum rem nobis sapiente quam nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolorum ad est nisi distinctio sunt cumque ut labore, consequatur vero, itaque ullam qui aperiam officia iure necessitatibus? Distinctio, necessitatibus expedita!</p>
+                <br>
+            </div>
             </div>
         </div>
     </main>
@@ -72,6 +115,6 @@
             <a class="footer--link" href="https://www.linkedin.com/in/irina-mancini/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
      </footer>
-
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
