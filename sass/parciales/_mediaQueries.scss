@@ -1,0 +1,78 @@
+/* -----------------------------------------------
+---------------- MEDIA QUERIES --------------- */
+
+@media screen and (max-width: 480px) {
+   
+    .header{
+        background-color: lightgrey;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .header__image{
+            display: flex;
+            justify-content: center;  
+        }
+        .header__navegador{
+            background-color: lightgrey;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            justify-content: flex-end;
+            .header__ulnavegador {
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                ul a {
+                    width: 100vw;
+                }
+            }
+        }
+    }
+    .h1-index{
+        color: #fff;
+        font-size: 2rem;
+        text-align: center; 
+        display: flex;
+        flex-direction: column;  
+    }
+    main h2 {
+        height: 250px;
+        padding-top: 100px;
+    }
+    
+    
+    /* INICIO ---------------------- */
+    .h2-index { 
+        display: none;
+    }
+    .h1-index {
+        margin-bottom: 35px;
+    }
+    .hero{
+        height: 830px;
+        .hero-button {
+            font-size: 12px;
+        }
+    }
+    
+    /* SERVICIOS -------------------- */
+    
+    .div__servicios {
+        margin-left: 17px;
+        margin-right: 17px;
+        margin-top: 25px;
+        column-gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        .servicios--subtitulo {
+            margin-top: 20px;
+        }
+    }
+    
+    /* CONTACTO -------------------- */
+     .formulario {
+         width: 90%;
+     }
+    }

@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Glegoo:wght@700&family=Noto+Serif:ital@0;1&family=PT+Serif:ital@0;1&family=Roboto+Slab:wght@300;400&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'PT Serif', serif; }
+
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  padding-bottom: 60px;
+  min-height: 100vh; }
+
+.body-index {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh; }
+
+main {
+  padding-top: 2.5rem; }
+
+main h2 {
+  height: 200px;
+  background-image: linear-gradient(to bottom, #547c92, #daecf6);
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 70px; }
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 8px; }
+
+.header {
+  background-color: lightgrey;
+  color: black;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  z-index: 2; }
+  .header__image {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    display: inline-block;
+    margin-left: 17px; }
+  .header__navegador {
+    background-color: lightgrey;
+    margin-right: 30px;
+    color: black;
+    height: 45px;
+    justify-content: center; }
+    .header__navegador li {
+      list-style: none;
+      padding: 10px;
+      float: left;
+      justify-content: center; }
+      .header__navegador li ul a {
+        text-decoration: none;
+        color: #000;
+        transition: all 0.4s linear;
+        border-radius: 4px;
+        padding: 1rem;
+        justify-content: center; }
+        .header__navegador li ul a ul a:hover {
+          background: #e1e5e5; }
+
+.menu {
+  display: none; }
+
+.navbar {
+  padding: 0; }
+
+.footer {
+  height: 50px;
+  background-color: lightgray;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .footer__mail {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .footer__mail--mail {
+      margin-left: 20px;
+      font-size: 13px; }
+  .footer__link {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .footer__link--link {
+      margin-right: 20px; }
+
+/* INICIO -------------------- */
+.hero {
+  height: 630px;
+  background-image: url("../assets/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .hero .hero::before {
+    content: " ";
+    background: darkgray;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  .hero .hero-button {
+    background-color: rgba(211, 211, 211, 0.85);
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    position: relative;
+    z-index: 2; }
+    .hero .hero-button .hero-button:hover {
+      cursor: pointer; }
+
+.h1-index {
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 110%;
+  z-index: 2; }
+
+.h2-index {
+  color: #fff;
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 40px;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-duration: 2.5s;
+  z-index: 2; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+.h3__index {
+  background-image: linear-gradient(to bottom, #547c92, #daecf6);
+  font-size: 1.8rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 18px;
+  height: 70px;
+  margin: 0; }
+
+.div__parrafo {
+  margin-bottom: 0px;
+  padding: 0px; }
+
+.card__index {
+  height: 30vh;
+  justify-content: center;
+  cursor: default;
+  transition: height 0.5s;
+  /* transition: width 2s; */ }
+  .card__index .card__a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 3px;
+    transition: all 400ms case; }
+
+.card__index:hover {
+  height: 95%;
+  /* width: %; */
+  z-index: 1; }
+
+.h3__index--margin {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.container__casoexito {
+  margin-bottom: 30px; }
+
+.div__sobremi {
+  margin-right: 17px; }
+
+.div__parrafo {
+  padding: 25px 25px 0px 25px; }
+
+.card {
+  margin-top: 30px; }
+
+.conectemos {
+  height: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .conectemos .conectemos__linkedin {
+    margin-left: 5px; }
+
+/* SERVICIOS -------------------- */
+.mainServicios {
+  height: 100vh; }
+
+.div__servicios {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 17px;
+  margin-right: 17px;
+  margin-top: 25px;
+  column-gap: 2rem; }
+  .div__servicios .div-s {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center; }
+  .div__servicios .img__servicios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 15px; }
+  .div__servicios .servicios--subtitulo {
+    text-align: center; }
+
+/* CAPACITACIONES ----------------- */
+.main__capacitaciones {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-right: 20vw;
+  margin-left: 20vw; }
+
+.carousel-item {
+  align-content: center;
+  justify-content: center; }
+  .carousel-item .video {
+    height: 300px; }
+
+/* CONTACTO ----------------- */
+.mensaje {
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  margin-bottom: 20px; }
+
+.formulario {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 2px; }
+  .formulario .div__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 20px; }
+  .formulario .campo {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 7px;
+    font-size: 15px;
+    border: none; }
+  .formulario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  .formulario .div__button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .formulario .div__button .button {
+      width: 100%;
+      padding-bottom: 20px;
+      background: #bebdbd;
+      padding: 15px;
+      border-radius: 1px;
+      text-align: center;
+      border: none; }
+      .formulario .div__button .button .button:hover {
+        cursor: pointer; }
+
+/* -----------------------------------------------
+---------------- MEDIA QUERIES --------------- */
+@media screen and (max-width: 480px) {
+  .header {
+    background-color: lightgrey;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .header .header__image {
+      display: flex;
+      justify-content: center; }
+    .header .header__navegador {
+      background-color: lightgrey;
+      color: black;
+      margin: 0px;
+      padding: 0px;
+      justify-content: flex-end; }
+      .header .header__navegador .header__ulnavegador {
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px; }
+        .header .header__navegador .header__ulnavegador ul a {
+          width: 100vw; }
+  .h1-index {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+  main h2 {
+    height: 250px;
+    padding-top: 100px; }
+  /* INICIO ---------------------- */
+  .h2-index {
+    display: none; }
+  .h1-index {
+    margin-bottom: 35px; }
+  .hero {
+    height: 830px; }
+    .hero .hero-button {
+      font-size: 12px; }
+  /* SERVICIOS -------------------- */
+  .div__servicios {
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 25px;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat 3, 1fr; }
+    .div__servicios .servicios--subtitulo {
+      margin-top: 20px; }
+  /* CONTACTO -------------------- */
+  .formulario {
+    width: 90%; } }

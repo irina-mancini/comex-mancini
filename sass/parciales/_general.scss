@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Glegoo:wght@700&family=Noto+Serif:ital@0;1&family=PT+Serif:ital@0;1&family=Roboto+Slab:wght@300;400&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+.body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+.body-index {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+main {
+    padding-top: 2.5rem;
+}
+main h2 {
+    height: 200px;
+    background-image: $fondoSubtitulo;
+    font-size: 2rem;
+    text-align: center;  
+    justify-content: center;
+    padding-top: 70px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}

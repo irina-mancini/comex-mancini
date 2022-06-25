@@ -1,0 +1,19 @@
+/* CAPACITACIONES ----------------- */
+
+.main__capacitaciones {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    
+}
+.carousel-item { 
+    align-content: center;
+    justify-content: center;
+    .video {
+        height: 300px;
+        }
+}

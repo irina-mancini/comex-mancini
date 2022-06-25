@@ -1,0 +1,54 @@
+/* CONTACTO ----------------- */
+.mensaje {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.formulario {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0,0.08);
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 2px;
+    .div__contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 20px;
+    }
+    .campo {
+        width: 100%;
+        margin-bottom: 18px;
+        padding: 7px;
+        font-size: 15px;
+        border: none;
+    }
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    .div__button {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .button {
+            width: 100%;
+            padding-bottom: 20px;
+            background: rgb(190, 189, 189);
+            padding: 15px;
+            border-radius: 1px;
+            text-align: center;
+            border: none;
+            .button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    }

@@ -1,0 +1,35 @@
+// /* FOOTER -------------------------- */
+.footer {
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    &__mail {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          flex-direction: row;
+          &--mail {
+                  margin-left: 20px;
+                  font-size: 13px;
+              }
+      }
+    &__link {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: flex-end;
+          &--link {
+                margin-right: 20px;      
+                }
+        }
+   }
