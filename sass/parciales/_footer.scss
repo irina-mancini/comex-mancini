@@ -1,7 +1,7 @@
 // /* FOOTER -------------------------- */
 .footer {
     height: 50px;
-    background-color: lightgray;
+    background-color: map-get($colores, "bkg");
     display: flex;
     align-content: center;
     justify-content: center;

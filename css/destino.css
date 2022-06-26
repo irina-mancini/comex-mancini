@@ -12,28 +12,6 @@
   padding-bottom: 60px;
   min-height: 100vh; }
 
-.body-index {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  position: relative;
-  padding-bottom: 50px;
-  min-height: 100vh; }
-
-main {
-  padding-top: 2.5rem; }
-
-main h2 {
-  height: 200px;
-  background-image: linear-gradient(to bottom, #547c92, #daecf6);
-  font-size: 2rem;
-  text-align: center;
-  justify-content: center;
-  padding-top: 70px; }
-
-h3 {
-  margin-top: 10px;
-  margin-bottom: 8px; }
-
 .header {
   background-color: lightgrey;
   color: black;
@@ -59,7 +37,7 @@ h3 {
       justify-content: center; }
       .header__navegador li ul a {
         text-decoration: none;
-        color: #000;
+        color: black;
         transition: all 0.4s linear;
         border-radius: 4px;
         padding: 1rem;
@@ -75,7 +53,7 @@ h3 {
 
 .footer {
   height: 50px;
-  background-color: lightgray;
+  background-color: lightgrey;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -104,6 +82,16 @@ h3 {
       margin-right: 20px; }
 
 /* INICIO -------------------- */
+.index__main {
+  padding-top: 2.5rem; }
+
+.body-index {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh; }
+
 .hero {
   height: 630px;
   background-image: url("../assets/fondo.jpg");
@@ -117,7 +105,7 @@ h3 {
   justify-content: center; }
   .hero .hero::before {
     content: " ";
-    background: darkgray;
+    background: darkgrey;
     opacity: 0.3;
     height: 100%;
     width: 100%;
@@ -159,6 +147,8 @@ h3 {
     opacity: 1; } }
 
 .h3__index {
+  margin-top: 10px;
+  margin-bottom: 8px;
   background-image: linear-gradient(to bottom, #547c92, #daecf6);
   font-size: 1.8rem;
   text-align: center;
@@ -199,6 +189,9 @@ h3 {
 .container__casoexito {
   margin-bottom: 30px; }
 
+.sobre__main {
+  padding-top: 2.5rem; }
+
 .div__sobremi {
   margin-right: 17px; }
 
@@ -221,8 +214,9 @@ h3 {
     margin-left: 5px; }
 
 /* SERVICIOS -------------------- */
-.mainServicios {
-  height: 100vh; }
+.servicios__main {
+  height: 100vh;
+  padding-top: 2.5rem; }
 
 .div__servicios {
   max-width: 100%;
@@ -250,14 +244,21 @@ h3 {
     text-align: center; }
 
 /* CAPACITACIONES ----------------- */
-.main__capacitaciones {
+.capacitaciones__h2, .sobre__h2, .servicios__h2, .contacto__h2 {
+  height: 200px;
+  background-image: linear-gradient(to bottom, #547c92, #daecf6);
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 70px; }
+
+.capacitaciones__main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-bottom: 20px;
-  margin-right: 20vw;
-  margin-left: 20vw; }
+  padding-top: 2.5rem; }
 
 .carousel-item {
   align-content: center;
@@ -266,6 +267,9 @@ h3 {
     height: 300px; }
 
 /* CONTACTO ----------------- */
+.contacto__main {
+  padding-top: 2.5rem; }
+
 .mensaje {
   text-align: center;
   margin: 0;
@@ -302,16 +306,16 @@ h3 {
     justify-content: center;
     align-items: center;
     align-content: center; }
-    .formulario .div__button .button {
-      width: 100%;
-      padding-bottom: 20px;
-      background: #bebdbd;
-      padding: 15px;
-      border-radius: 1px;
-      text-align: center;
-      border: none; }
-      .formulario .div__button .button .button:hover {
-        cursor: pointer; }
+  .formulario .button {
+    width: 100%;
+    padding-bottom: 20px;
+    background: #bebdbd;
+    padding: 15px;
+    border-radius: 1px;
+    text-align: center;
+    border: none; }
+    .formulario .button .button:hover {
+      cursor: pointer; }
 
 /* -----------------------------------------------
 ---------------- MEDIA QUERIES --------------- */

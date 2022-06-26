@@ -1,8 +1,12 @@
 /* SERVICIOS -------------------- */
 
-.mainServicios {
-    height: 100vh
+.servicios__main {
+    height: 100vh;
     // max-width: 100%;
+    @include main
+}
+.servicios__h2 {
+    @extend .capacitaciones__h2;
 }
 .div__servicios {
     max-width: 100%;

@@ -1,19 +1,26 @@
 /* CAPACITACIONES ----------------- */
-
-.main__capacitaciones {
+.capacitaciones__h2 {
+    height: 200px;
+    background-image: $fondoSubtitulo;
+    font-size: 2rem;
+    text-align: center;  
+    justify-content: center;
+    padding-top: 70px;
+}
+.capacitaciones__main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-bottom: 20px;
-    margin-right: 20vw;
-    margin-left: 20vw;
-    
+    @include main;
 }
 .carousel-item { 
     align-content: center;
     justify-content: center;
     .video {
+        // margin-left: 20vw;
+        // margin-right: 20vw;
         height: 300px;
         }
 }

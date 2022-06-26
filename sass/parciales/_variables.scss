@@ -1,1 +1,19 @@
-$fondoSubtitulo: linear-gradient(to bottom,  #547c92,  #daecf6 )
+$fondoSubtitulo: linear-gradient(to bottom,  #547c92,  #daecf6);
+$colores: (
+    "bkgForm": rgba(0, 0, 0,0.08),
+    "bkgButtonForm": rgb(190, 189, 189),
+    "bkg": lightgrey,
+    "letra": black,
+    "opacity": darkgrey,
+    "buttonHero": rgba(211, 211, 211,0.85),
+    "hoverUl": rgb(225, 229, 229),
+    "h": #fff,
+    "aCard": #2fb4cc
+);
+@mixin h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+@mixin main {
+    padding-top: 2.5rem;
+}

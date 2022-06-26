@@ -1,5 +1,14 @@
  /* INICIO -------------------- */
-
+.index__main {
+    @include main
+}
+.body-index {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
 .hero{
     height: 630px;
     background-image: url("../assets/fondo.jpg");
@@ -13,7 +22,7 @@
     justify-content: center;    
     .hero::before{
         content: " ";
-        background: darkgray;
+        background: map-get($colores, "opacity");
         opacity: 0.3;
         height: 100%;
         width: 100%;
@@ -21,7 +30,7 @@
         
     }
     .hero-button {
-    background-color: rgba(211, 211, 211,0.85) ;
+    background-color: map-get($colores, "buttonHero");
     font-size: 16px;
     border-radius: 4px;
     padding: 10px;
@@ -35,14 +44,14 @@
 
 }
 .h1-index {
-    color: #fff;
+    color: map-get($colores, "h");
     font-size: 70px;
     text-align: center;   
     font-weight: 110%;
     z-index: 2;
 }
 .h2-index {
-    color: #fff;
+    color: map-get($colores, "h");
     font-size: 29px;
     text-align: center;
     margin-bottom: 40px;  
@@ -59,7 +68,8 @@
 }
 
 .h3__index {
-    background-image:linear-gradient(to bottom,  #547c92,  #daecf6 ) ;
+    @include h3;
+    background-image: $fondoSubtitulo;
     font-size: 1.8rem;
     text-align: center;  
     justify-content: center;
@@ -93,7 +103,6 @@
     /* width: %; */
     z-index: 1;
 } 
-
 .h3__index--margin {
     margin-top: 30px;
     margin-bottom: 20px;
