@@ -7,29 +7,32 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: auto;
     margin-bottom: 0px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    align-self: flex-end;
+    padding-bottom: 0px;
     &__mail {
           width: 50%;
           display: flex;
           align-items: center;
           flex-wrap: wrap;
           flex-direction: row;
-          &--mail {
-                  margin-left: 20px;
-                  font-size: 13px;
-              }
       }
+      &--mail {
+              margin-left: 20px;
+              font-size: 13px;
+          }
     &__link {
           width: 50%;
           display: flex;
           align-items: center;
           flex-direction: row;
           justify-content: flex-end;
-          &--link {
-                margin-right: 20px;      
-                }
-        }
+      }
+      &--link {
+            margin-right: 20px;      
+            }
    }

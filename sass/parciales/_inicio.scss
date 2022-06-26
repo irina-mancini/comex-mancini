@@ -36,7 +36,7 @@
     padding: 10px;
     border: none;
     position: relative;
-    z-index: 2;
+    // z-index: 2;
     .hero-button:hover {
         cursor: pointer;
     }
@@ -48,7 +48,7 @@
     font-size: 70px;
     text-align: center;   
     font-weight: 110%;
-    z-index: 2;
+    // z-index: 2;
 }
 .h2-index {
     color: map-get($colores, "h");
@@ -58,7 +58,7 @@
     animation-name: aparecer;
     animation-iteration-count: 1;
     animation-duration: 2.5s;
-    z-index: 2;
+    // z-index: 2;
     
 }
 @keyframes aparecer {
@@ -77,9 +77,15 @@
     height: 70px;
     margin: 0;
     }
-.div__parrafo {
-    margin-bottom: 0px;
-    padding: 0px;
+.div__ssindex {
+    .index--rowcard {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .div__parrafo {
+        margin-bottom: 0px;
+        padding: 0px;
+}
 }
 .card__index {
     height: 30vh;
@@ -108,4 +114,8 @@
     margin-bottom: 20px;
 }
 .container__casoexito {
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+    // @extend .index--rowcard
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
