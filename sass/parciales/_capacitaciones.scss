@@ -15,12 +15,18 @@
     padding-bottom: 20px;
     @include main;
 }
+
 .carousel-item { 
     align-content: center;
     justify-content: center;
-    .video {
-        // margin-left: 20vw;
-        // margin-right: 20vw;
+    .carrusel__video {
+        padding-left: 20%;
+        padding-right: 20%;
         height: 300px;
         }
 }
+.carousel__icon {
+     filter: invert(108%);
+}
+
+    

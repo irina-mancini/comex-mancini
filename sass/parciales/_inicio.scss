@@ -1,121 +1,115 @@
  /* INICIO -------------------- */
-.index__main {
-    @include main
-}
-.body-index {
+.index__body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     position: relative;
     padding-bottom: 50px;
     min-height: 100vh;
-}
-.hero{
-    height: 630px;
-    background-image: url("../assets/fondo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-    .hero::before{
-        content: " ";
-        background: map-get($colores, "opacity");
-        opacity: 0.3;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        
+    .index__main {
+        @include main
+        .index__hero{
+            height: 630px;
+            background-image: url("../assets/fondo.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;    
+            .hero::before{
+                content: " ";
+                background: map-get($colores, "opacity");
+                opacity: 0.3;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+            .index__hero--button {
+            background-color: map-get($colores, "buttonHero");
+            font-size: 16px;
+            border-radius: 4px;
+            padding: 10px;
+            border: none;
+            position: relative;
+            // z-index: 2;
+            .hero-button:hover {
+                cursor: pointer;
+            }
+        }
+        .index__h1 {
+            color: map-get($colores, "h");
+            font-size: 70px;
+            text-align: center;   
+            font-weight: 110%;
+            // z-index: 2;
+        }
+        .index__h2 {
+            color: map-get($colores, "h");
+            font-size: 29px;
+            text-align: center;
+            margin-bottom: 40px;  
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+            animation-duration: 2.5s;
+            // z-index: 2;
+            @keyframes aparecer {
+                0% {opacity: 0;}
+                50% {opacity: 0.5;}
+                100% {opacity: 1;}
+            }
+        }
     }
-    .hero-button {
-    background-color: map-get($colores, "buttonHero");
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 10px;
-    border: none;
-    position: relative;
-    // z-index: 2;
-    .hero-button:hover {
-        cursor: pointer;
-    }
-}
-
-}
-.h1-index {
-    color: map-get($colores, "h");
-    font-size: 70px;
-    text-align: center;   
-    font-weight: 110%;
-    // z-index: 2;
-}
-.h2-index {
-    color: map-get($colores, "h");
-    font-size: 29px;
-    text-align: center;
-    margin-bottom: 40px;  
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-    animation-duration: 2.5s;
-    // z-index: 2;
-    
-}
-@keyframes aparecer {
-    0% {opacity: 0;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
-}
-
-.h3__index {
-    @include h3;
-    background-image: $fondoSubtitulo;
-    font-size: 1.8rem;
-    text-align: center;  
-    justify-content: center;
-    padding-top: 18px;
-    height: 70px;
-    margin: 0;
-    }
-.div__ssindex {
-    .index--rowcard {
+    .index__h3 {
+        @include h3;
+        background-image: $fondoSubtitulo;
+        font-size: 1.8rem;
+        text-align: center;  
+        justify-content: center;
+        padding-top: 18px;
+        height: 70px;
+        margin: 0;
+    }    
+    .index__h3--margin {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }  
+    .index--rowCard {
         margin-right: 2rem;
         margin-left: 2rem;
-    }
-    .div__parrafo {
-        margin-bottom: 0px;
-        padding: 0px;
-}
-}
-.card__index {
-    height: 30vh;
-    justify-content: center;
-    cursor: default;
-    transition: height 0.5s;
-    /* transition: width 2s; */
-    .card__a {
-        margin-top: 20px;
-        text-decoration: none;
-        display: inline-block;
-        margin-bottom: 5px;
-        color: #2fb4cc;
-        border: 1px solid #2fb4cc;
-        border-radius: 3px;
-        transition: all 400ms case;
+        .card__index {
+            height: 30vh;
+            justify-content: center;
+            cursor: default;
+            transition: height 0.5s;
+            /* transition: width 2s; */
+            .index__card--parrafo {
+                margin-bottom: 0px;
+                padding: 0px;
+            }
+            .card__a {
+                margin-top: 20px;
+                text-decoration: none;
+                display: inline-block;
+                margin-bottom: 5px;
+                color: #000;
+                border: 1px solid black;
+                border-radius: 3px;
+                transition: all 400ms case;
+            } 
+        }   
+        .card__index:hover {
+            height: 95%;
+            /* width: %; */
+            z-index: 1;
+        }
     } 
-}
-.card__index:hover {
-    height: 95%;
-    /* width: %; */
-    z-index: 1;
-} 
-.h3__index--margin {
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-.container__casoexito {
-    margin-bottom: 30px;
-    // @extend .index--rowcard
-    padding-left: 2rem;
-    padding-right: 2rem;
+    .index__container--casoExito {
+        margin-bottom: 30px;
+        // @extend .index--rowcard
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    }
 }

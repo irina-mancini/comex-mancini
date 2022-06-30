@@ -1,24 +1,10 @@
 /* CONTACTO ----------------- */
 .contacto__main {
     @include main
-}
-.contacto__h2 {
-    @extend .capacitaciones__h2;
-}
-.mensaje {
-    text-align: center;
-    margin: 0;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-.formulario {
-    width: 450px;
-    margin: auto;
-    background: map-get($colores, "bkgForm");
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 2px;
-    .div__contacto {
+    .contacto__h2 {
+        @extend .capacitaciones__h2;
+    }
+    .contacto__div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -26,35 +12,50 @@
         margin-top: 1rem;
         padding-bottom: 20px;
     }
-    .campo {
-        width: 100%;
-        margin-bottom: 18px;
-        padding: 7px;
-        font-size: 15px;
-        border: none;
-    }
-    textarea {
-        min-height: 100px;
-        max-height: 200px;
-        max-width: 100%;
-    }
-    .div__button {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    .button {
-        width: 100%;
-        padding-bottom: 20px;
-        background: map-get($colores, "bkgButtonForm");
-        padding: 15px;
-        border-radius: 1px;
-        text-align: center;
-        border: none;
-        .button:hover {
-            cursor: pointer;
+    .contacto__formulario {
+        width: 450px;
+        margin: auto;
+        background: map-get($colores, "bkgForm");
+        padding: 10px 20px;
+        margin-top: 15px;
+        border-radius: 2px;
+        .contacto__mensaje {
+            text-align: center;
+            margin: 0;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }   
+        .campo {
+            width: 100%;
+            margin-bottom: 18px;
+            padding: 7px;
+            font-size: 15px;
+            border: none;
         }
-    }
-    }
+        .contacto__textarea {
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+        .contacto__button {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .button {
+            width: 100%;
+            padding-bottom: 20px;
+            background: map-get($colores, "bkgButtonForm");
+            padding: 15px;
+            border-radius: 1px;
+            text-align: center;
+            border: none;
+            .button:hover {
+                cursor: pointer;
+            }
+        }
+        }
+}
+

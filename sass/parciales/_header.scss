@@ -16,15 +16,15 @@
     &__navegador{
         background-color: map-get($colores, "bkg");
         color: map-get($colores, "letra");
-        height: 45px;
         justify-content: center;
-        li{
+        padding: 0 15px 0 15px;
+        &__li{
           list-style: none;
-          padding: 10px;  
+          padding: 10px 20px 10px 20px;  
           float: left;
           justify-content: center;
-          background-color: map-get($colores, "bkg")
-          ul a{
+          background-color: map-get($colores, "bkg");
+          &--a {
               text-decoration: none;
               color: map-get($colores, "letra");
               transition: all 0.4s linear;
@@ -34,15 +34,10 @@
               background-color: map-get($colores, "bkg")
             }
         }
-        ul a:hover {
+        .header--a:hover {
         background: map-get($colores, "hoverUl");
         border-radius: 5%;
         }
     }
 }
-.menu {
-    display: none;
-}
-.navbar {
-    padding: 0;
-}
+
