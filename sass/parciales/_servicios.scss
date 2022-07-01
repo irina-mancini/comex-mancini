@@ -1,18 +1,15 @@
 /* SERVICIOS -------------------- */
 
 .servicios__main {
-    height: 100vh;
     position: relative;
-    max-width: 100%;
+    padding-bottom: 20px;
     @include main
-    min-height: 100vh;
     .servicios__h2 {
         @extend .capacitaciones__h2;
     }
     .servicios__div {
         max-width: 100%;
         display: flex;
-        flex-direction: row;
         margin-left: 17px;
         margin-right: 17px;
         margin-top: 25px;
@@ -29,34 +26,19 @@
         .servicios__div--div2 {
             @extend .servicios__div--div;
             padding-bottom: 25px;
-            .servicios__img {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-                padding-bottom: 15px;
-            }
-            .servicios--subtitulo {
-                text-align: center;
-            }
         }
+        .servicios__img {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding-bottom: 15px;
+            }
+        .servicios--subtitulo {
+            text-align: center;
+            }
     }
 }
-.servicios__footer {
-    height: 50px;
-    background-color: map-get($colores, "bkg");
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: auto;
-    margin-bottom: 0px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    align-self: flex-end;
-    padding-bottom: 0px;
-}
+

@@ -8,12 +8,13 @@ $colores: (
     "buttonHero": rgba(211, 211, 211,0.85),
     "hoverUl": rgb(225, 229, 229),
     "h": #fff,
-    "aCard": #2fb4cc
+    "aCard": #649fbe
 );
 @mixin h3 {
-    margin-top: 10px;
     margin-bottom: 8px;
 }
 @mixin main {
     padding-top: 2.5rem;
+    min-height: 100vh;
+    max-width: 100%;
 }

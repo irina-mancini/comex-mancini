@@ -1,13 +1,23 @@
 // /* SOBRE NOSOTROS ------------------- */
 .sobre__main {
     @include main
+    padding-bottom: 20px;
 }
 .sobre__h2 {
         @extend .capacitaciones__h2;
     }
-
+.sobre__h3 {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
 .div__sobremi {
     margin-right: 17px;
+}
+.sobre__card {
+    // height: 300px;
 }
 .div__parrafo {
     padding: 25px 25px 0px 25px ;

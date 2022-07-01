@@ -3,10 +3,9 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     position: relative;
-    padding-bottom: 50px;
-    min-height: 100vh;
     .index__main {
         @include main
+        padding-bottom: 20px;
         .index__hero{
             height: 630px;
             background-image: url("../assets/fondo.jpg");
@@ -27,13 +26,13 @@
                 position: absolute;
             }
             .index__hero--button {
-            background-color: map-get($colores, "buttonHero");
-            font-size: 16px;
-            border-radius: 4px;
-            padding: 10px;
-            border: none;
-            position: relative;
-            // z-index: 2;
+                background-color: map-get($colores, "buttonHero");
+                font-size: 16px;
+                border-radius: 4px;
+                padding: 10px;
+                border: none;
+                position: relative;
+                // z-index: 2;
             .hero-button:hover {
                 cursor: pointer;
             }
@@ -68,8 +67,7 @@
         text-align: center;  
         justify-content: center;
         padding-top: 18px;
-        height: 70px;
-        margin: 0;
+        height: 70px;       
     }    
     .index__h3--margin {
         margin-top: 30px;
@@ -97,6 +95,9 @@
                 border: 1px solid black;
                 border-radius: 3px;
                 transition: all 400ms case;
+                background-color: rgb(218, 217, 217);
+                width: 150px;
+                align-self: center;
             } 
         }   
         .card__index:hover {
@@ -106,10 +107,46 @@
         }
     } 
     .index__container--casoExito {
-        margin-bottom: 30px;
-        // @extend .index--rowcard
-        padding-left: 2rem;
-        padding-right: 2rem;
+        background-color: rgb(248,249,250);
+        padding: 50px;
+
+        .index__casoExito--card {
+            padding: 10px;
+        }
+        .index__casoExito--card1 {
+            margin-top: 0;
+        }
+        .index__casoExito--col {
+           justify-content: center;
+           align-items: center;
+           align-content: center; 
+           .index__casoExito--img1 {
+                width: 77%;
+           }
+           .index__casoExito--img2 {
+                width: 60%;
+           }
+           .index__casoExito--img3 {
+            width: 80%;
+       }
+           .index__h4 {
+                font-size: 1.5rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+           }
+        }
     }
     }
 }
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  .index__icon {
+    color: map-get($colores, "aCard");
+    font-size: 49px;
+  }

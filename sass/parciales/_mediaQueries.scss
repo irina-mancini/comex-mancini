@@ -58,26 +58,31 @@
     
     /* SERVICIOS -------------------- */
     
-    .servicios__div {
-        margin-left: 17px;
-        margin-right: 17px;
-        margin-top: 25px;
-        column-gap: 2rem;
-        display: grid;
-        grid-template-columns: repeat (3, 1fr);
-        .servicios--subtitulo {
-            margin-top: 20px;
-        }
+    
+    .servicios--subtitulo {
+        margin-top: 20px;
     }
+    
     
     /* CONTACTO -------------------- */
      .contacto__formulario {
          width: 90%;
      }
     }
+
+    @media screen and (max-width: 768px) {
+        .servicios__div {
+            flex-direction: column;
+        }
+    }
+
  /* ----------------- DESKTOP -------------------- */
      @media screen and (min-width: 768px) {
          .header__navegador{
             height: 45px;
      }
- }
+     .servicios__div {
+        flex-direction: row;
+    }    
+     
+}

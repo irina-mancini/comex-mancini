@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 20px;
+    min-height: 100vh;
+    padding-bottom: 40px;
     @include main;
 }
 
@@ -22,7 +23,7 @@
     .carrusel__video {
         padding-left: 20%;
         padding-right: 20%;
-        height: 300px;
+        min-height: 400px;
         }
 }
 .carousel__icon {
