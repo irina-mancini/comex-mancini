@@ -65,12 +65,10 @@
     
     
     /* CONTACTO -------------------- */
-    // .contacto__div {
-    //     width: 200px;
-    // } 
-    // .contacto__formulario {
-    //      width: 70%;
-    //  }
+    
+    .contacto__formulario {
+         width: 300px;
+     }
     }
 
     @media screen and (max-width: 768px) {
@@ -89,3 +87,8 @@
     }    
      
 }
+@media screen and (min-width: 480px) {
+    .contacto__formulario {
+        width: 500px;
+    }
+   }

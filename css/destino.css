@@ -337,7 +337,6 @@
     padding-bottom: 20px;
     max-width: 100%; }
     .contacto__main .contacto__div .contacto__formulario {
-      width: 450px;
       background: rgba(0, 0, 0, 0.08);
       padding: 10px 20px;
       margin-top: 15px;
@@ -450,7 +449,9 @@
   /* SERVICIOS -------------------- */
   .servicios--subtitulo {
     margin-top: 20px; }
-  /* CONTACTO -------------------- */ }
+  /* CONTACTO -------------------- */
+  .contacto__formulario {
+    width: 300px; } }
 
 @media screen and (max-width: 768px) {
   .servicios__div {
@@ -462,3 +463,7 @@
     height: 45px; }
   .servicios__div {
     flex-direction: row; } }
+
+@media screen and (min-width: 480px) {
+  .contacto__formulario {
+    width: 500px; } }
