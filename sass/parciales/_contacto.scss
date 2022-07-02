@@ -12,9 +12,9 @@
         align-content: center;
         margin-top: 1rem;
         padding-bottom: 20px;
+        max-width: 100%;
         .contacto__formulario {
             width: 450px;
-            margin: auto;
             background: map-get($colores, "bkgForm");
             padding: 10px 20px;
             margin-top: 15px;

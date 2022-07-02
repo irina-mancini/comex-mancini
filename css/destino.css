@@ -334,10 +334,10 @@
     align-items: center;
     align-content: center;
     margin-top: 1rem;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    max-width: 100%; }
     .contacto__main .contacto__div .contacto__formulario {
       width: 450px;
-      margin: auto;
       background: rgba(0, 0, 0, 0.08);
       padding: 10px 20px;
       margin-top: 15px;
