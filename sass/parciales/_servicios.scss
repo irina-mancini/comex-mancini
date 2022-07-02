@@ -16,16 +16,17 @@
         column-gap: 2rem;
         .servicios__div--div {
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             align-content: center;
             margin-left: 15px;
             margin-right: 15px;
-        }
-        .servicios__div--div2 {
-            @extend .servicios__div--div;
-            padding-bottom: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            flex-grow: 1;
+            background: map-get($colores, "ssCard");
         }
         .servicios__img {
             display: flex;
@@ -35,6 +36,7 @@
             align-items: center;
             align-content: center;
             padding-bottom: 15px;
+            flex-grow: 1;
             }
         .servicios--subtitulo {
             text-align: center;

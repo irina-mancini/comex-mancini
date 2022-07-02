@@ -2,7 +2,7 @@
 .capacitaciones__h2 {
     height: 200px;
     background-image: $fondoSubtitulo;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;  
     justify-content: center;
     padding-top: 70px;
@@ -15,6 +15,10 @@
     min-height: 100vh;
     padding-bottom: 40px;
     @include main;
+    .capacitaciones__h3 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .carousel-item { 

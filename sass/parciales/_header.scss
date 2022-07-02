@@ -34,7 +34,8 @@
                   transition: all 0.4s linear;
                   border-radius: 4px;
                   justify-content: center;
-                  background-color: map-get($colores, "bkg")
+                  background-color: map-get($colores, "bkg");
+                  font-size: 150px;
                 }
             }
         }
@@ -60,7 +61,7 @@
     .toggler-icon{
         width: 30px;
         height: 3px;
-        background-color: #777777;
+        background-color: black;
         display: block;
         transition: all 0.2s;
         margin-right: 15px;
@@ -91,7 +92,7 @@
         transform: rotate(0);
     }
     .navbar-toggler.collapsed .toggler-icon {
-        background-color: #777777;
+        background-color: black;
     }
 
 }
