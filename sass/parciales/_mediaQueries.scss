@@ -65,9 +65,12 @@
     
     
     /* CONTACTO -------------------- */
-     .contacto__formulario {
-         width: 90%;
-     }
+    // .contacto__div {
+    //     width: 200px;
+    // } 
+    // .contacto__formulario {
+    //      width: 70%;
+    //  }
     }
 
     @media screen and (max-width: 768px) {
@@ -77,9 +80,9 @@
     }
 
  /* ----------------- DESKTOP -------------------- */
-     @media screen and (min-width: 768px) {
-         .header__navegador{
-            height: 45px;
+@media screen and (min-width: 768px) {
+    .header__navegador{
+        height: 45px;
      }
      .servicios__div {
         flex-direction: row;

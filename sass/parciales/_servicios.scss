@@ -7,6 +7,10 @@
     .servicios__h2 {
         @extend .capacitaciones__h2;
     }
+    .servicios__h3 {
+        @extend .sobre__h3;
+        text-align: center;    
+    }
     .servicios__div {
         max-width: 100%;
         display: flex;
@@ -25,6 +29,7 @@
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 10px;
+            margin-bottom: 25px;
             flex-grow: 1;
             background: map-get($colores, "ssCard");
         }

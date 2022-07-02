@@ -28,7 +28,8 @@
     background-color: lightgrey;
     color: black;
     justify-content: center;
-    padding: 0 15px 0 15px; }
+    padding: 0 15px 0 15px;
+    max-width: 100%; }
     .header__navegador .navbar-toggler {
       border: 0 !important; }
     .header__navegador .navbar-toggler:focus,
@@ -156,7 +157,8 @@
         height: 30vh;
         justify-content: center;
         cursor: default;
-        transition: height 0.5s; }
+        transition: height 0.5s;
+        margin-bottom: 20px; }
         .index__body .index__main .index--rowCard .index__card .index__card--parrafo {
           margin-bottom: 0px;
           padding: 0px; }
@@ -178,17 +180,15 @@
         .index__body .index__main .index--rowCard .index__card .card__a:hover {
           background: #3b3b3b;
           color: #fff; }
-      .index__body .index__main .index--rowCard .card__index:hover {
-        height: 95%;
-        /* width: %; */
-        z-index: 1; }
     .index__body .index__main .index__container--casoExito {
       background-color: #f8f9fa;
-      padding: 50px; }
+      padding: 50px 50px 30px 50px; }
       .index__body .index__main .index__container--casoExito .index__casoExito--card {
-        padding: 10px; }
+        padding: 10px;
+        margin-bottom: 20px; }
       .index__body .index__main .index__container--casoExito .index__casoExito--card1 {
-        margin-top: 0; }
+        margin-top: 0;
+        margin-bottom: 20px; }
       .index__body .index__main .index__container--casoExito .index__casoExito--col {
         justify-content: center;
         align-items: center;
@@ -213,7 +213,7 @@
   min-height: 100vh;
   max-width: 100%;
   padding-bottom: 20px; }
-  .sobre__main .sobre__h3 {
+  .sobre__main .sobre__h3, .sobre__main .servicios__main .servicios__h3, .servicios__main .sobre__main .servicios__h3 {
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -249,6 +249,8 @@
   padding-top: 2.5rem;
   min-height: 100vh;
   max-width: 100%; }
+  .servicios__main .servicios__h3 {
+    text-align: center; }
   .servicios__main .servicios__div {
     max-width: 100%;
     display: flex;
@@ -267,6 +269,7 @@
       padding-left: 30px;
       padding-right: 30px;
       padding-top: 10px;
+      margin-bottom: 25px;
       flex-grow: 1;
       background: #f1f5f7; }
     .servicios__main .servicios__div .servicios__img {
@@ -329,6 +332,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin-top: 1rem;
     padding-bottom: 20px; }
     .contacto__main .contacto__div .contacto__formulario {
@@ -446,9 +450,7 @@
   /* SERVICIOS -------------------- */
   .servicios--subtitulo {
     margin-top: 20px; }
-  /* CONTACTO -------------------- */
-  .contacto__formulario {
-    width: 90%; } }
+  /* CONTACTO -------------------- */ }
 
 @media screen and (max-width: 768px) {
   .servicios__div {

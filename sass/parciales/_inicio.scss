@@ -79,6 +79,7 @@
             justify-content: center;
             cursor: default;
             transition: height 0.5s;
+            margin-bottom: 20px;
             .index__card--parrafo {
                 margin-bottom: 0px;
                 padding: 0px;
@@ -105,21 +106,23 @@
                 color: map-get($colores, "h");
             }
         }   
-        .card__index:hover {
-            height: 95%;
-            /* width: %; */
-            z-index: 1;
-        }
+        // .card__index:hover {
+        //     height: 95%;
+        //     /* width: %; */
+        //     z-index: 1;
+        // }
     } 
     .index__container--casoExito {
         background-color: map-get($colores, "containerCasoExito");
-        padding: 50px;
+        padding: 50px 50px 30px 50px;
 
         .index__casoExito--card {
             padding: 10px;
+            margin-bottom: 20px;
         }
         .index__casoExito--card1 {
             margin-top: 0;
+            margin-bottom: 20px;
         }
         .index__casoExito--col {
            justify-content: center;
@@ -150,5 +153,5 @@
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
-  }
+}
  
