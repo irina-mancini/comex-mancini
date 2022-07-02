@@ -9,7 +9,10 @@ $colores: (
     "hoverUl": rgb(225, 229, 229),
     "h": #fff,
     "aCard": #649fbe,
+    "aCardHover": rgb(59, 59, 59),
     "ssCard": #f1f5f7,
+    "bkgCard": rgb(218, 217, 217),
+    "containerCasoExito": rgb(248,249,250),
 );
 @mixin h3 {
     margin-bottom: 8px;

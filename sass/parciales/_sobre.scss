@@ -2,50 +2,42 @@
 .sobre__main {
     @include main
     padding-bottom: 20px;
-}
-.sobre__h2 {
-        @extend .capacitaciones__h2;
+    .sobre__h2 {
+            @extend .capacitaciones__h2;
+        }
+    .sobre__h3 {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 25px;
     }
-.sobre__h3 {
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin-top: 25px;
-}
-.div__sobremi {
-    margin-right: 17px;
-}
-.sobre__card {
-    // height: 300px;
-}
-.div__parrafo {
-    padding: 25px 25px 0px 25px ;
-    align-items: center;
-    justify-content: center;    
-}
-.div__parrafo2 {
-    padding: 0px 25px 0px 25px;
-  
-}
-.card {
-    margin-top: 30px;
-}
-
-.conectemos {
-    height: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 18px;
-    .sobre__conectemos--text {
-        margin-bottom: 0px;
+    .sobre__card {
+        margin-top: 30px;
+        .div__parrafo {
+            padding: 25px 25px 0px 25px ;
+            align-items: center;
+            justify-content: center;    
+        }
+        .div__parrafo2 {
+            padding: 0px 25px 0px 25px;
+        }
     }
-    .conectemos__linkedin {
-        margin-left: 5px;
+    .conectemos {
+        height: 50px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 18px;
+        .sobre__conectemos--text {
+            margin-bottom: 0px;
+        }
+        .conectemos__linkedin {
+            margin-left: 5px;
+        }
     }
 }

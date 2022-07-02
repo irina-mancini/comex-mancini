@@ -17,13 +17,33 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;    
-            .hero::before{
-                content: " ";
-                background: map-get($colores, "opacity");
-                opacity: 0.3;
-                height: 100%;
-                width: 100%;
-                position: absolute;
+            // .hero::before{
+            //     content: " ";
+            //     background: map-get($colores, "opacity");
+            //     opacity: 0.3;
+            //     height: 100%;
+            //     width: 100%;
+            //     position: absolute;
+            // }
+            .index__h1 {
+                color: map-get($colores, "h");
+                font-size: 70px;
+                text-align: center;   
+                font-weight: 110%;
+            }
+            .index__h2 {
+                color: map-get($colores, "h");
+                font-size: 29px;
+                text-align: center;
+                margin-bottom: 40px;  
+                animation-name: aparecer;
+                animation-iteration-count: 1;
+                animation-duration: 2.5s;
+                @keyframes aparecer {
+                    0% {opacity: 0;}
+                    50% {opacity: 0.5;}
+                    100% {opacity: 1;}
+                }
             }
             .index__hero--button {
                 background-color: map-get($colores, "buttonHero");
@@ -32,33 +52,11 @@
                 padding: 10px;
                 border: none;
                 position: relative;
-                // z-index: 2;
-            .hero-button:hover {
-                cursor: pointer;
+                transition: 0.5s;
             }
-        }
-        .index__h1 {
-            color: map-get($colores, "h");
-            font-size: 70px;
-            text-align: center;   
-            font-weight: 110%;
-            // z-index: 2;
-        }
-        .index__h2 {
-            color: map-get($colores, "h");
-            font-size: 29px;
-            text-align: center;
-            margin-bottom: 40px;  
-            animation-name: aparecer;
-            animation-iteration-count: 1;
-            animation-duration: 2.5s;
-            // z-index: 2;
-            @keyframes aparecer {
-                0% {opacity: 0;}
-                50% {opacity: 0.5;}
-                100% {opacity: 1;}
+            .index__hero--button:hover {
+                background: #fff;
             }
-        }
     }
     .index__h3 {
         @include h3;
@@ -76,29 +74,36 @@
     .index--rowCard {
         margin-right: 2rem;
         margin-left: 2rem;
-        .card__index {
+        .index__card {
             height: 30vh;
             justify-content: center;
             cursor: default;
             transition: height 0.5s;
-            /* transition: width 2s; */
             .index__card--parrafo {
                 margin-bottom: 0px;
                 padding: 0px;
+                .index__icon {
+                    color: map-get($colores, "aCard");
+                    font-size: 49px;
+                  }
             }
             .card__a {
                 margin-top: 20px;
                 text-decoration: none;
                 display: inline-block;
                 margin-bottom: 5px;
-                color: #000;
+                color: map-get($colores, "letra");
                 border: 1px solid black;
                 border-radius: 3px;
-                transition: all 400ms case;
-                background-color: rgb(218, 217, 217);
+                transition: 0.5s;
+                background-color:map-get($colores, "bkgCard");
                 width: 150px;
                 align-self: center;
             } 
+            .card__a:hover {
+                background:map-get($colores, "aCardHover");
+                color: map-get($colores, "h");
+            }
         }   
         .card__index:hover {
             height: 95%;
@@ -107,7 +112,7 @@
         }
     } 
     .index__container--casoExito {
-        background-color: rgb(248,249,250);
+        background-color: map-get($colores, "containerCasoExito");
         padding: 50px;
 
         .index__casoExito--card {
@@ -120,6 +125,12 @@
            justify-content: center;
            align-items: center;
            align-content: center; 
+           .index__h4 {
+                font-size: 1.5rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+           }
            .index__casoExito--img1 {
                 width: 77%;
            }
@@ -129,12 +140,6 @@
            .index__casoExito--img3 {
             width: 80%;
        }
-           .index__h4 {
-                font-size: 1.5rem;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-           }
         }
     }
     }
@@ -146,7 +151,4 @@
     'GRAD' 0,
     'opsz' 48
   }
-  .index__icon {
-    color: map-get($colores, "aCard");
-    font-size: 49px;
-  }
+ 

@@ -15,23 +15,29 @@
     min-height: 100vh;
     padding-bottom: 40px;
     @include main;
-    .capacitaciones__h3 {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-}
-
-.carousel-item { 
-    align-content: center;
-    justify-content: center;
-    .carrusel__video {
-        padding-left: 20%;
-        padding-right: 20%;
-        min-height: 400px;
+    .capacitaciones__card {
+        margin-top: 60px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding-bottom: 65px;
+        background: map-get($colores, "ssCard");
+        .capacitaciones__h3 {
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
-}
-.carousel__icon {
-     filter: invert(108%);
+        .carousel-item { 
+            align-content: center;
+            justify-content: center;
+            .carrusel__video {
+                padding-left: 20%;
+                padding-right: 20%;
+                min-height: 400px;
+                }
+        }
+        .carousel__icon {
+             filter: invert(108%);
+        }
+    }
 }
 
     
