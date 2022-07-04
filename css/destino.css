@@ -201,6 +201,7 @@
         .index__body .index__main .index__container--casoExito .index__casoExito--col .index__casoExito--img1 {
           width: 77%; }
         .index__body .index__main .index__container--casoExito .index__casoExito--col .index__casoExito--img2 {
+          filter: invert(1);
           width: 60%; }
         .index__body .index__main .index__container--casoExito .index__casoExito--col .index__casoExito--img3 {
           width: 80%; }
@@ -271,7 +272,8 @@
       padding-top: 10px;
       margin-bottom: 25px;
       flex-grow: 1;
-      background: #f1f5f7; }
+      background: #f1f5f7;
+      flex-basis: 100%; }
     .servicios__main .servicios__div .servicios__img {
       display: flex;
       flex-direction: column;

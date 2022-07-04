@@ -32,6 +32,7 @@
             margin-bottom: 25px;
             flex-grow: 1;
             background: map-get($colores, "ssCard");
+            flex-basis: 100%;
         }
         .servicios__img {
             display: flex;
